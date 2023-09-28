@@ -1,0 +1,91 @@
+.background {
+	position: sticky;
+	z-index: 0;
+}
+
+.blur {
+	backdrop-filter: blur(20px);
+	filter: blur(20px);
+	background-color: rgba(255, 255, 255, 0.2);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.lightFloat {
+	position: absolute;
+	z-index: 1;
+}
+
+.lightFloat:nth-child(1) {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: springgreen;
+	animation: float1 6s ease-in-out infinite;
+}
+.lightFloat:nth-child(2) {
+	border-radius: 50%;
+	top: 100px;
+	left: 350px;
+	width: 100px;
+	height: 100px;
+	animation: float1 6s ease-in-out infinite;
+}
+.lightFloat:nth-child(3) {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: darkgoldenrod;
+	animation: float1 6s ease-in-out infinite;
+}
+.lightFloat:nth-child(4) {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: turquoise;
+	animation: float1 6s ease-in-out infinite;
+}
+
+
+
+@keyframes float1 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+
+	100% {
+		transform: translatey(0px);
+	}
+
+	0% {
+		transform: translatex(0px);
+	}
+	25% {
+		transform: translateX(20px);
+	}
+	50% {
+		transform: translatex(-20px
+	}
+	100% {
+		transform: translatex(0px);
+	}
+
+	0% {
+		background-color: transparent;
+	}
+	5% {
+		background-color: tomato;
+	}
+	95% {
+		background-color: tomato;
+	}
+	100% {
+		background-color: transparent;
+	}
+}
