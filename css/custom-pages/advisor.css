@@ -157,16 +157,23 @@
 	align-self: center;
 	padding: 20px;
 	border-radius: 15px;
+	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
 }
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+	.profileImage__image {
+		width: unset !important;
+		max-height: 500px;
+	}
+	.section__headline {
+		height: unset;
+	}
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.section__headline > .section__content {
 		flex-direction: column-reverse;
 	}

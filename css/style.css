@@ -184,7 +184,7 @@ footer>span:nth-child(2) {
 	transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
 	.menu-button-container {
 		display: flex;
 		position: absolute;
