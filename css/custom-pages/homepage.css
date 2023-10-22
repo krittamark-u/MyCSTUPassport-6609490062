@@ -194,10 +194,47 @@
 	align-self: center;
 	padding: 20px;
 	border-radius: 15px;
+	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
 }
 
-@media screen {
-	
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	.section__headline {
+		height: 95vh;
+	}
+	.section__headline > .section__content {
+		flex-direction: column-reverse !important;
+	}
+	.profileImage {
+		width: 100%;
+	}
+	.profileImage__background {
+		left: 5%;
+	}
+	.profileImage__foreground {
+		left: 5%;
+	}
+	.headline__text {
+		padding: 0;
+		margin: 0 auto;
+		width: 70%;
+	}
+	section {
+		padding: 20px 30px;
+	}
+	.card__wrapper {
+		padding: 20px 0;
+	}
+	.actionButton__wrapper {
+		justify-content: center;
+	}
+	.contact__content {
+		height: 100px;
+	}
 }

@@ -112,3 +112,28 @@
 .headline__paragraphTitle {
 	font-weight: 600;	
 }
+
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	section {
+		padding: 20px 15px;
+	}
+	.image__albums {
+		width: 100%;
+	}
+	.section__activity > .section__content {
+		flex-direction: column-reverse;
+		height: unset;
+	}
+	.image__albums {
+		height: 50vw;
+	}
+	.headline__paragraph {
+		padding: 0 10px;
+	}
+	
+}

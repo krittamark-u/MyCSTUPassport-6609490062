@@ -114,7 +114,7 @@
 .activity__card {
 	position: relative;
 	margin: 10px;
-	width: 300px;
+	max-width: 300px;
 	color: rgb(40, 40, 70);
 	text-align: center;
 	font-weight: bold;
@@ -155,6 +155,13 @@
 	transition: .5s ease-in-out transform;
 }
 
-@media screen {
-	
+@media only screen and (max-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	section {
+		padding: 20px 15px;
+	}
 }
